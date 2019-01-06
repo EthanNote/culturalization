@@ -49,3 +49,4 @@ FindHull (Sk, P, Q)
 }
 Output = Convex Hull
 ```
+![](./img/220px-Animation_depicting_the_quickhull_algorithm.gif)
