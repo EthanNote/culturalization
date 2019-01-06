@@ -1,5 +1,8 @@
 # Quickhull Algorithm
 
+
+### PhyX SDK doc
+
 http://gameworksdocs.nvidia.com/PhysX/4.0/documentation/PhysXGuide/Manual/Geometry.html#quickhull-algorithm
 
 >Quickhull Algorithm
@@ -17,6 +20,8 @@ This algorithm creates a convex mesh whose vertices are a subset of the original
 
 >When the hull is constructed each new vertex added must be further than PxCookingParams::planeTolerance from the hull, if not that vertex is dropped.
 
+
+### Wiki
 
 https://en.wikipedia.org/wiki/Quickhull
 
