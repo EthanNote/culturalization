@@ -1,8 +1,24 @@
 # Quickhull Algorithm
 
-https://en.wikipedia.org/wiki/Quickhull
-
 http://gameworksdocs.nvidia.com/PhysX/4.0/documentation/PhysXGuide/Manual/Geometry.html#quickhull-algorithm
+
+>Quickhull Algorithm
+This algorithm creates a convex mesh whose vertices are a subset of the original vertices, and the number of vertices is guaranteed to be no more than the specified maximum.
+
+>The Quickhull algorithm performs these steps:
+
+>- Cleans the vertices - removes duplicates etc.
+>- Finds a subset of vertices, no more than vertexLimit, that enclose the input set.
+>- If the vertexLimit is reached, expand the limited hull around the input vertices to ensure we encapsulate all the input vertices.
+>- Compute a vertex map table. (Requires at least 3 neighbor polygons for each vertex.)
+>- Checks the polygon data - verifies that all vertices are on or inside the hull, etc.
+>- Computes mass and inertia tensor assuming density is 1.
+>- Saves data to stream.
+
+>When the hull is constructed each new vertex added must be further than PxCookingParams::planeTolerance from the hull, if not that vertex is dropped.
+
+
+https://en.wikipedia.org/wiki/Quickhull
 
 ```
 Input = a set S of n points 
